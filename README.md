@@ -10,4 +10,6 @@ Landing estática para los servicios de arquitectura de software y consultoría 
 
 ## Publicar con GitHub Pages
 
-En GitHub, abre **Settings → Pages**. En **Build and deployment**, selecciona **Deploy from a branch**, elige `main` y la carpeta `/ (root)`, y guarda. GitHub Pages publicará el `index.html` del repositorio junto con los recursos de `assets/`.
+El workflow `.github/workflows/pages.yml` despliega automáticamente el sitio cada vez que se actualiza la rama `main`. También se puede ejecutar manualmente desde **Actions → Deploy to GitHub Pages → Run workflow**.
+
+Para activarlo la primera vez, abre **Settings → Pages** y selecciona **GitHub Actions** en **Build and deployment → Source**. El despliegue publicará `index.html` y los recursos de `assets/` en <https://clretamales.github.io/arquetipodigital/>.
