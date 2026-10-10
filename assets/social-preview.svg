@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#101614"/>
+  <g stroke="#d8e3d8" stroke-opacity=".07" stroke-width="1">
+    <path d="M0 78H1200M0 156H1200M0 234H1200M0 312H1200M0 390H1200M0 468H1200M0 546H1200"/>
+    <path d="M78 0V630M156 0V630M234 0V630M312 0V630M390 0V630M468 0V630M546 0V630M624 0V630M702 0V630M780 0V630M858 0V630M936 0V630M1014 0V630M1092 0V630M1170 0V630"/>
+  </g>
+  <path d="M0 0H13V630H0Z" fill="#b7f36b"/>
+  <g font-family="Arial, Helvetica, sans-serif">
+    <text x="76" y="91" fill="#b7f36b" font-size="18" letter-spacing="4">ARQUETIPO DIGITAL</text>
+    <path d="M76 117H400" stroke="#b7f36b" stroke-width="2"/>
+    <text x="76" y="215" fill="#f4f5f0" font-size="59" font-weight="700" letter-spacing="-2">Arquitectura .NET</text>
+    <text x="76" y="286" fill="#f4f5f0" font-size="59" font-weight="700" letter-spacing="-2">para sistemas que</text>
+    <text x="76" y="357" fill="#b7f36b" font-size="59" font-weight="700" letter-spacing="-2">necesitan crecer.</text>
+    <text x="78" y="423" fill="#c0c9c0" font-size="23">Modernización, APIs y revisión técnica</text>
+    <text x="78" y="463" fill="#c0c9c0" font-size="23">para aplicaciones .NET en Chile.</text>
+    <text x="78" y="555" fill="#8e9b90" font-size="16" letter-spacing="2">ARQUITECTURA · MODERNIZACIÓN · SEGURIDAD</text>
+  </g>
+  <g transform="translate(748 146)" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="196" cy="164" r="148" stroke="#b7f36b" stroke-opacity=".17" stroke-width="1.5"/>
+    <circle cx="196" cy="164" r="112" stroke="#b7f36b" stroke-opacity=".12" stroke-width="1" stroke-dasharray="4 9"/>
+    <path d="M77 100H142M250 100H316M77 228H142M250 228H316M196 59V93M196 235V270" stroke="#b7f36b" stroke-opacity=".72" stroke-width="2"/>
+    <rect x="143" y="96" width="106" height="62" rx="7" fill="#1d2a21" stroke="#b7f36b" stroke-width="2"/>
+    <rect x="143" y="171" width="106" height="62" rx="7" fill="#18221b" stroke="#8d9d8e" stroke-opacity=".8" stroke-width="1.5"/>
+    <rect x="24" y="77" width="54" height="46" rx="6" fill="#18221b" stroke="#8d9d8e" stroke-opacity=".8" stroke-width="1.5"/>
+    <rect x="316" y="77" width="54" height="46" rx="6" fill="#18221b" stroke="#8d9d8e" stroke-opacity=".8" stroke-width="1.5"/>
+    <rect x="24" y="205" width="54" height="46" rx="6" fill="#18221b" stroke="#8d9d8e" stroke-opacity=".8" stroke-width="1.5"/>
+    <rect x="316" y="205" width="54" height="46" rx="6" fill="#18221b" stroke="#8d9d8e" stroke-opacity=".8" stroke-width="1.5"/>
+    <rect x="169" y="21" width="54" height="38" rx="5" fill="#18221b" stroke="#8d9d8e" stroke-opacity=".8" stroke-width="1.5"/>
+    <rect x="169" y="270" width="54" height="38" rx="5" fill="#18221b" stroke="#8d9d8e" stroke-opacity=".8" stroke-width="1.5"/>
+    <path d="M172 120H220M172 137H206M172 194H220M172 211H206" stroke="#b7f36b" stroke-opacity=".8" stroke-width="3"/>
+    <circle cx="51" cy="100" r="5" fill="#b7f36b" stroke="none"/>
+    <circle cx="343" cy="100" r="5" fill="#b7f36b" stroke="none"/>
+    <circle cx="51" cy="228" r="5" fill="#b7f36b" stroke="none"/>
+    <circle cx="343" cy="228" r="5" fill="#b7f36b" stroke="none"/>
+    <circle cx="196" cy="40" r="5" fill="#b7f36b" stroke="none"/>
+    <circle cx="196" cy="289" r="5" fill="#b7f36b" stroke="none"/>
+  </g>
+</svg>
