@@ -303,6 +303,55 @@
     @media(max-width:680px){.hero{padding-top:42px;gap:24px}.hero h1{font-size:48px}.hero-copy{font-size:16px}.diagram{min-height:0;padding:13px 12px 11px}.diagram-head,.diagram-foot{font-size:8px}.hero-blueprint-wide{display:none}.hero-blueprint-tall{display:block;width:min(100%,390px);align-self:center;margin:6px auto}.capability-system{grid-template-columns:1fr}.capability-node,.capability-node+.capability-node{padding:18px 0 18px 42px;border-left:0;border-top:1px solid var(--line)}.capability-node:first-child{border-top:0}.capability-node+.capability-node:before{left:0;top:-1px;width:19px}.capability-heading{position:relative}.capability-heading:before{content:"";position:absolute;left:-34px;top:15px;bottom:-39px;border-left:1px solid rgba(183,243,107,.45)}.capability-node:last-child .capability-heading:before{bottom:-15px}.capability-heading>span{position:absolute;left:-49px;width:30px;height:30px;background:#000}.capability-node:last-child .capability-heading>span{background:#000}.capability-node:nth-child(3){border-top:1px solid var(--line)}.capability-node:nth-child(3):before{display:block}.capability-offer p{font-size:14px}.architecture-blueprint{margin-top:30px;padding-left:34px}.architecture-spine{left:9px}.architecture-layer{grid-template-columns:28px minmax(0,1fr);gap:8px;padding-bottom:12px}.architecture-index{padding-top:13px;font-size:9px}.architecture-plane{min-height:72px;display:block;padding:12px}.architecture-label h3{font-size:16px}.architecture-label span{font-size:8px}.architecture-plane p{margin-top:6px;text-align:left;font-size:13px}.architecture-annotations{margin-left:36px;flex-wrap:wrap;font-size:8px}.architecture-note{margin-top:25px;font-size:28px}.modernization-blueprint{grid-template-columns:1fr}.modern-stage,.modern-stage+.modern-stage,.modern-stage:nth-child(2n){padding:18px 0 20px 42px;border-left:0;border-top:1px solid var(--line)}.modern-stage:first-child{border-top:0}.modern-stage+.modern-stage:before,.modern-stage:nth-child(3):before{left:0;top:-4px}.modern-stage-top{margin-bottom:10px}.modern-stage h3{font-size:17px}.modern-stage p{min-height:0;font-size:14px}.modern-drawing{height:78px;margin:12px 0 0;max-width:175px}.monolith-window{height:60px}.ecosystem-map{height:auto;min-height:580px;margin-top:28px}.ecosystem-core{left:50%;top:48%;width:88px;height:88px;font-size:24px}.ecosystem-node{min-width:0;width:46%;padding:9px}.ecosystem-node span{font-size:9px}.ecosystem-api{left:0;top:0}.ecosystem-cloud{left:auto;right:0;top:0}.ecosystem-messaging{right:0;top:28%}.ecosystem-data{right:0;top:63%}.ecosystem-observe{right:0;bottom:0}.ecosystem-design{left:0;bottom:0}.ecosystem-runtime{left:0;top:28%}.ecosystem-storage{left:0;top:63%;bottom:auto}.ecosystem-lines span{width:36%}.ecosystem-lines span:nth-child(1){transform:rotate(220deg);width:37%}.ecosystem-lines span:nth-child(2){transform:rotate(300deg);width:40%}.ecosystem-lines span:nth-child(3){transform:rotate(320deg);width:38%}.ecosystem-lines span:nth-child(4){transform:rotate(0deg);width:36%}.ecosystem-lines span:nth-child(5){transform:rotate(30deg);width:38%}.ecosystem-lines span:nth-child(6){transform:rotate(150deg);width:38%}.ecosystem-lines span:nth-child(7){transform:rotate(180deg);width:36%}.ecosystem-lines span:nth-child(8){transform:rotate(60deg);width:39%}.method .steps{grid-template-columns:1fr;margin-top:30px}.method .steps:before{left:17px;right:auto;top:18px;bottom:25px;border-top:0;border-left:1px solid rgba(183,243,107,.5)}.method .step{padding:0 0 24px}.method .step-num span{background:#181818}.method .step h3{margin:10px 0 5px}.method .step p{margin-left:44px}.technical-annotation{float:none;display:block;margin-top:10px}}
     @media(prefers-reduced-motion:reduce){.blueprint-spine{animation:none;stroke-dashoffset:0}.capability-node,.architecture-layer,.modern-stage,.ecosystem-node,.method .step{transition:none}}
     @media(max-width:680px){.modernization-blueprint .modern-stage,.modernization-blueprint .modern-stage:nth-child(odd),.modernization-blueprint .modern-stage:nth-child(even){padding-left:42px}}
+    /* Keep the radial composition, with calmer connectors and softer node shapes. */
+    .ecosystem-map{height:430px;margin-top:40px}
+    .ecosystem-lines span{background:rgba(183,243,107,.38);animation:ecosystem-link 5s ease-in-out infinite}
+    .ecosystem-lines span:nth-child(1){transform:rotate(206deg);width:26.1%}
+    .ecosystem-lines span:nth-child(2){transform:rotate(270deg);width:16.5%}
+    .ecosystem-lines span:nth-child(3){transform:rotate(335deg);width:27.3%}
+    .ecosystem-lines span:nth-child(4){transform:rotate(0deg);width:32%}
+    .ecosystem-lines span:nth-child(5){transform:rotate(27deg);width:25.5%}
+    .ecosystem-lines span:nth-child(6){transform:rotate(153deg);width:25.5%}
+    .ecosystem-lines span:nth-child(7){transform:rotate(180deg);width:32%}
+    .ecosystem-lines span:nth-child(8){transform:rotate(90deg);width:16.5%}
+    .ecosystem-lines span:nth-child(2n){animation-delay:-2.5s}
+    .ecosystem-core{width:112px;height:112px;border-radius:50%;background:var(--card);box-shadow:0 0 0 10px rgba(183,243,107,.045),0 0 34px rgba(183,243,107,.08);animation:ecosystem-pulse 5s ease-in-out infinite}
+    .ecosystem-core:after{content:"";position:absolute;inset:-8px;border:1px solid rgba(183,243,107,.25);border-radius:50%;pointer-events:none}
+    .ecosystem-node{min-width:164px;padding:11px 14px 11px 30px;border-radius:999px;background:var(--card);box-shadow:0 7px 22px rgba(0,0,0,.08);transition:transform .7s cubic-bezier(.32,.72,0,1),box-shadow .7s cubic-bezier(.32,.72,0,1),border-color .7s cubic-bezier(.32,.72,0,1)}
+    .ecosystem-map.is-visible .ecosystem-node{animation:ecosystem-arrive .8s cubic-bezier(.32,.72,0,1) both}
+    .ecosystem-node:before{left:12px;width:6px;height:6px;box-shadow:0 0 0 4px rgba(183,243,107,.09)}
+    .ecosystem-node b{font-size:14px;line-height:19px}
+    .ecosystem-node span{font-size:10px;line-height:15px;white-space:nowrap}
+    .ecosystem-map.is-visible .ecosystem-api{animation-delay:.04s}.ecosystem-map.is-visible .ecosystem-cloud{animation-delay:.1s}.ecosystem-map.is-visible .ecosystem-messaging{animation-delay:.16s}.ecosystem-map.is-visible .ecosystem-data{animation-delay:.22s}
+    .ecosystem-map.is-visible .ecosystem-observe{animation-delay:.28s}.ecosystem-map.is-visible .ecosystem-design{animation-delay:.34s}.ecosystem-map.is-visible .ecosystem-runtime{animation-delay:.4s}.ecosystem-map.is-visible .ecosystem-storage{animation-delay:.46s}
+    .ecosystem-node:hover{transform:translateY(-3px) scale(1.025);box-shadow:0 12px 28px rgba(0,0,0,.16)}
+    @keyframes ecosystem-arrive{from{opacity:0;transform:translateY(12px) scale(.97)}to{opacity:1;transform:translateY(0) scale(1)}}
+    @keyframes ecosystem-pulse{0%,100%{box-shadow:0 0 0 8px rgba(183,243,107,.035),0 0 28px rgba(183,243,107,.05)}50%{box-shadow:0 0 0 14px rgba(183,243,107,.09),0 0 40px rgba(183,243,107,.12)}}
+    @keyframes ecosystem-link{0%,100%{opacity:.55}50%{opacity:1}}
+    [data-theme="light"] .ecosystem-core,[data-theme="light"] .ecosystem-node{background:#f8f9f4}
+    [data-theme="light"] .ecosystem-node{box-shadow:0 7px 22px rgba(22,32,24,.06)}
+    @media(max-width:900px){
+      .ecosystem-map{height:auto;max-width:720px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px 16px;margin:34px auto 0}
+      .ecosystem-map:before{content:"";position:absolute;z-index:0;left:50%;top:46px;bottom:20px;width:1px;background:rgba(183,243,107,.32);pointer-events:none}
+      .ecosystem-lines{display:none}
+      .ecosystem-core{position:relative;left:auto;top:auto;transform:none;grid-column:1/-1;justify-self:center;width:96px;height:96px;margin:0 0 12px}
+      .ecosystem-node,.ecosystem-api,.ecosystem-cloud,.ecosystem-messaging,.ecosystem-data,.ecosystem-observe,.ecosystem-design,.ecosystem-runtime,.ecosystem-storage{position:relative;inset:auto;left:auto;right:auto;top:auto;bottom:auto;grid-area:auto;z-index:1;width:auto;min-width:0;min-height:68px;padding:12px 14px 12px 28px;align-self:stretch}
+      .ecosystem-node span{white-space:normal}
+      .ecosystem-map.is-visible .ecosystem-node:nth-child(odd){animation-name:ecosystem-arrive-left}
+      .ecosystem-map.is-visible .ecosystem-node:nth-child(even){animation-name:ecosystem-arrive-right}
+    }
+    @keyframes ecosystem-arrive-left{from{opacity:0;transform:translateX(-18px)}to{opacity:1;transform:translateX(0)}}
+    @keyframes ecosystem-arrive-right{from{opacity:0;transform:translateX(18px)}to{opacity:1;transform:translateX(0)}}
+    @media(max-width:520px){
+      .ecosystem-map{grid-template-columns:minmax(0,1fr);gap:10px;margin-top:28px;max-width:420px}
+      .ecosystem-map:before{left:50%;top:40px;bottom:16px}
+      .ecosystem-core{width:84px;height:84px;font-size:23px;margin-bottom:8px}
+      .ecosystem-node,.ecosystem-api,.ecosystem-cloud,.ecosystem-messaging,.ecosystem-data,.ecosystem-observe,.ecosystem-design,.ecosystem-runtime,.ecosystem-storage{min-height:62px;width:min(100%,340px);justify-self:center;padding:10px 16px 10px 28px}
+      .ecosystem-node b{font-size:13px}.ecosystem-node span{font-size:9px;line-height:14px}
+      .ecosystem-map.is-visible .ecosystem-node:nth-child(n){animation-name:ecosystem-arrive-mobile}
+    }
+    @keyframes ecosystem-arrive-mobile{from{opacity:0;transform:translateY(14px) scale(.98)}to{opacity:1;transform:translateY(0) scale(1)}}
+    @media(prefers-reduced-motion:reduce){.ecosystem-node{animation:none;opacity:1}.ecosystem-core,.ecosystem-lines span{animation:none}}
   </style>
 </head>
 <body>
@@ -406,6 +455,13 @@
         if(entry.isIntersecting){entry.target.classList.add('is-active');revealObserver.unobserve(entry.target)}
       }),{rootMargin:'-35% 0px -45% 0px',threshold:0});
       revealText.querySelectorAll('span').forEach(word=>revealObserver.observe(word));
+    }
+    const ecosystemMap=document.querySelector('.ecosystem-map');
+    if(ecosystemMap&&!matchMedia('(prefers-reduced-motion: reduce)').matches){
+      const ecosystemObserver=new IntersectionObserver(entries=>entries.forEach(entry=>{
+        if(entry.isIntersecting){entry.target.classList.add('is-visible');ecosystemObserver.unobserve(entry.target)}
+      }),{threshold:.2});
+      ecosystemObserver.observe(ecosystemMap);
     }
   </script>
 </body>
